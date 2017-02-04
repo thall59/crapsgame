@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="thall59.crapsgamemodified.GroupAssignment2">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backgroundImage"
+        android:scaleType="centerCrop"
+        android:focusable="true"
+        android:src="@drawable/crapsbackground"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll" >
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="thall59.groupassignment1.CrapsApp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:scrollIndicators="right"
+                android:id="@+id/linearLayout"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="121dp"
+                    android:src="@drawable/craps"
+                    android:id="@+id/title"
+                    android:scaleType="fitXY"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/winsloss"
+                    android:id="@+id/winsloss"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="thall59.groupassignment1.CrapsApp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/bank"
+                        android:id="@+id/bank"
+                        android:textSize="16sp"
+                        android:gravity="bottom|right"
+                        android:textColor="#010101"
+                        android:layout_marginLeft="79dp"
+                        android:layout_marginStart="79dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/bankAmount"
+                        android:background="@color/material_grey_300"
+                        android:gravity="fill_horizontal"
+                        android:textColor="#4c9569"
+                        android:padding="8dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/bank"
+                        android:layout_toEndOf="@+id/bank" />
+
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:id="@+id/betAmount"
+                    android:background="@color/material_grey_300"
+                    android:gravity="fill_horizontal"
+                    android:textColor="#4c9569"
+                    android:padding="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/bank"
+                    android:layout_toEndOf="@+id/bank" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20">
+
+                    <ImageView
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/diceOneView"
+                        android:layout_marginTop="26dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="121dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/diceTwoView"
+                        android:layout_marginTop="26dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/rollNumber"
+                    android:id="@+id/rollNumber"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/roll_die"
+                    android:id="@+id/rollDieButton"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="rollButton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/results"
+                    android:id="@+id/results"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/restart"
+                    android:id="@+id/restartButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:onClick="newGame" />
+
+                <Button
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home"
+                    android:id="@+id/homeButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:onClick="homePage" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="thall59.crapsgamemodified.GroupAssignment2">
+
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_newGame"
+        android:title="New Game"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_help"
+        android:title="Help"
+        app:showAsAction="never"/>
+
+</menu>
